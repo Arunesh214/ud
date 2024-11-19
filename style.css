@@ -58,16 +58,21 @@ body {
     margin-right: 10px;
     align-items: center;
 }
-.navbar__s3 p,i{
+
+.navbar__s3 p,
+i {
     cursor: pointer;
 }
-.navbar__s4{
+
+.navbar__s4 {
     display: none;
 }
-.mylearning{
+
+.mylearning {
     position: relative;
 }
-.mylearning__popup{
+
+.mylearning__popup {
     position: absolute;
     background-color: white;
     border: black solid 1px;
@@ -79,7 +84,8 @@ body {
     display: none;
 
 }
-.mylearning:hover .mylearning__popup{
+
+.mylearning:hover .mylearning__popup {
     display: block;
 }
 
@@ -98,10 +104,50 @@ body {
     padding: 10px;
     border-radius: 30px;
     cursor: pointer;
+    border: #A359E1 solid 1px;
+}
+.categories p:hover{
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    border: #A359E1 solid 1px;
+
 }
 
 .sale-image img {
-    width: 100%;   
+    width: 100%;
+}
+
+.sale-image {
+    position: relative;
+}
+
+.sale-image__offer {
+    border: 2px solid black;
+    background-color: white;
+    width: 30%;
+    height: fit-content;
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    cursor: pointer;
+    text-align: center;
+    animation-name: zoomin;
+    animation-duration: 3s;
+}
+
+@keyframes zoomin {
+    0% {
+        transform: scale(0.5);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 100%;
+    }
 }
 
 .recomended {
@@ -119,10 +165,10 @@ body {
 }
 
 .course-card {
-   flex-grow: 1;
-   flex-basis: 20%;
-   margin: 5px;
-   margin-: 10px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
+    margin-: 10px;
 }
 
 .course-card img {
@@ -137,7 +183,7 @@ body {
 .topics__container {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10px;   
+    margin-top: 10px;
 }
 
 .topics__container p {
@@ -159,104 +205,93 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-between ;
+    justify-content: space-between;
     margin-top: 10px;
     flex-grow: 1;
 }
-.footer{
+
+.footer {
     background-color: black;
     padding: 30px;
     color: white;
     margin-top: 10px;
 }
-.footer__two h1{
+
+.footer__two h1 {
     color: #A359E1;
 }
-.footer__one{
+
+.footer__one {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
-.footer__two{
+
+.footer__two {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.footer__one p{
+
+.footer__one p {
     margin: 10px;
     cursor: pointer;
 }
-.sale-image{
-    position: relative;
-}
-.sale-image__offer {
-    border: 2px solid black;
-    background-color: white;
-    width: 30%;
-    height: fit-content;
-    padding: 20px;
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    cursor: pointer;
-    text-align: center;
-    animation-name: zoomin;
-    animation-duration: 3s;
 
-}
-@keyframes zoomin {
-    0%{
-        transform: scale(0.5);
-        opacity: 0%;
-    }
-    100%{
-        transform: scale(1);
-        opacity: 100%;
-    }
-}
 /* media queries */
-@media screen and (max-width:1000px){
-    body{
+@media screen and (max-width:1000px) {
+    body {
         font-size: 15px;
-    } 
-    .topics{
+    }
+
+    .topics {
         margin-top: 40px;
-    }  
-    .course-card{
+    }
+
+    .course-card {
         margin-top: 40px;
-    }  
+    }
+
     .footer {
         margin-top: 40px;
-    }     
+    }
 }
-@media screen and (max-width:800px){
-    body{
+
+@media screen and (max-width:800px) {
+    body {
         font-size: 10px;
-    } 
-    .course-card{
+    }
+
+    .course-card {
         margin-top: 40px;
-    } 
+    }
 }
-@media screen and (max-width:600px){
-    .course-card{
+
+@media screen and (max-width:600px) {
+    .course-card {
         flex-basis: 40%;
         margin-top: 15px;
     }
-    .topics{
+
+    .topics {
         margin-top: 5px;
     }
-    .sale-image__offer{
+
+    .sale-image__offer {
         font-size: 8px;
     }
-    .categories{
+
+    .categories {
         display: none;
     }
-    .navbar__s4{
+
+    .navbar__s4 {
         display: block;
     }
-    .navbar__s2,.navbar__s3{
+
+    .navbar__s2,
+    .navbar__s3 {
         display: none;
     }
 }
-
